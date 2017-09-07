@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */; };
+		B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C41F5FA79D00F3A78E /* ViewController.swift */; };
+		B35BD6C81F5FA79D00F3A78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6C61F5FA79D00F3A78E /* Main.storyboard */; };
+		B35BD6CA1F5FA79D00F3A78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6C91F5FA79D00F3A78E /* Assets.xcassets */; };
+		B35BD6CD1F5FA79D00F3A78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6CB1F5FA79D00F3A78E /* LaunchScreen.storyboard */; };
+		B35BD6D81F5FA79D00F3A78E /* JIPHYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6D71F5FA79D00F3A78E /* JIPHYTests.swift */; };
+		B35BD6E31F5FA79D00F3A78E /* JIPHYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6E21F5FA79D00F3A78E /* JIPHYUITests.swift */; };
+		C3A03F9FA70E9D6CBC28752C /* Pods_JIPHY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B35BD6D41F5FA79D00F3A78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35BD6B71F5FA79D00F3A78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35BD6BE1F5FA79D00F3A78E;
+			remoteInfo = JIPHY;
+		};
+		B35BD6DF1F5FA79D00F3A78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35BD6B71F5FA79D00F3A78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35BD6BE1F5FA79D00F3A78E;
+			remoteInfo = JIPHY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C7443F579876AE5F6115D8F /* Pods-JIPHY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIPHY.release.xcconfig"; path = "Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY.release.xcconfig"; sourceTree = "<group>"; };
+		64920599ABAE1285DEBEF590 /* Pods-JIPHY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIPHY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY.debug.xcconfig"; sourceTree = "<group>"; };
+		B35BD6BF1F5FA79D00F3A78E /* JIPHY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JIPHY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B35BD6C41F5FA79D00F3A78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B35BD6C71F5FA79D00F3A78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B35BD6C91F5FA79D00F3A78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B35BD6CC1F5FA79D00F3A78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B35BD6CE1F5FA79D00F3A78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35BD6D31F5FA79D00F3A78E /* JIPHYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JIPHYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35BD6D71F5FA79D00F3A78E /* JIPHYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIPHYTests.swift; sourceTree = "<group>"; };
+		B35BD6D91F5FA79D00F3A78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35BD6DE1F5FA79D00F3A78E /* JIPHYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JIPHYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35BD6E21F5FA79D00F3A78E /* JIPHYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIPHYUITests.swift; sourceTree = "<group>"; };
+		B35BD6E41F5FA79D00F3A78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JIPHY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B35BD6BC1F5FA79D00F3A78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A03F9FA70E9D6CBC28752C /* Pods_JIPHY.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6D01F5FA79D00F3A78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6DB1F5FA79D00F3A78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18CE27140038B4E561CF1B21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64920599ABAE1285DEBEF590 /* Pods-JIPHY.debug.xcconfig */,
+				5C7443F579876AE5F6115D8F /* Pods-JIPHY.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A935D0E967FEC6459C9ACE51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B35BD6B61F5FA79D00F3A78E = {
+			isa = PBXGroup;
+			children = (
+				B35BD6C11F5FA79D00F3A78E /* JIPHY */,
+				B35BD6D61F5FA79D00F3A78E /* JIPHYTests */,
+				B35BD6E11F5FA79D00F3A78E /* JIPHYUITests */,
+				B35BD6C01F5FA79D00F3A78E /* Products */,
+				18CE27140038B4E561CF1B21 /* Pods */,
+				A935D0E967FEC6459C9ACE51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B35BD6C01F5FA79D00F3A78E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B35BD6BF1F5FA79D00F3A78E /* JIPHY.app */,
+				B35BD6D31F5FA79D00F3A78E /* JIPHYTests.xctest */,
+				B35BD6DE1F5FA79D00F3A78E /* JIPHYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B35BD6C11F5FA79D00F3A78E /* JIPHY */ = {
+			isa = PBXGroup;
+			children = (
+				B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */,
+				B35BD6C41F5FA79D00F3A78E /* ViewController.swift */,
+				B35BD6C61F5FA79D00F3A78E /* Main.storyboard */,
+				B35BD6C91F5FA79D00F3A78E /* Assets.xcassets */,
+				B35BD6CB1F5FA79D00F3A78E /* LaunchScreen.storyboard */,
+				B35BD6CE1F5FA79D00F3A78E /* Info.plist */,
+			);
+			path = JIPHY;
+			sourceTree = "<group>";
+		};
+		B35BD6D61F5FA79D00F3A78E /* JIPHYTests */ = {
+			isa = PBXGroup;
+			children = (
+				B35BD6D71F5FA79D00F3A78E /* JIPHYTests.swift */,
+				B35BD6D91F5FA79D00F3A78E /* Info.plist */,
+			);
+			path = JIPHYTests;
+			sourceTree = "<group>";
+		};
+		B35BD6E11F5FA79D00F3A78E /* JIPHYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B35BD6E21F5FA79D00F3A78E /* JIPHYUITests.swift */,
+				B35BD6E41F5FA79D00F3A78E /* Info.plist */,
+			);
+			path = JIPHYUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B35BD6BE1F5FA79D00F3A78E /* JIPHY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35BD6E71F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHY" */;
+			buildPhases = (
+				C02E1981AF7F2EAD501754BC /* [CP] Check Pods Manifest.lock */,
+				B35BD6BB1F5FA79D00F3A78E /* Sources */,
+				B35BD6BC1F5FA79D00F3A78E /* Frameworks */,
+				B35BD6BD1F5FA79D00F3A78E /* Resources */,
+				1E089B09CAC707A37BBCDF97 /* [CP] Embed Pods Frameworks */,
+				765D0F48AE248874DC425C81 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JIPHY;
+			productName = JIPHY;
+			productReference = B35BD6BF1F5FA79D00F3A78E /* JIPHY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B35BD6D21F5FA79D00F3A78E /* JIPHYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35BD6EA1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYTests" */;
+			buildPhases = (
+				B35BD6CF1F5FA79D00F3A78E /* Sources */,
+				B35BD6D01F5FA79D00F3A78E /* Frameworks */,
+				B35BD6D11F5FA79D00F3A78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35BD6D51F5FA79D00F3A78E /* PBXTargetDependency */,
+			);
+			name = JIPHYTests;
+			productName = JIPHYTests;
+			productReference = B35BD6D31F5FA79D00F3A78E /* JIPHYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B35BD6DD1F5FA79D00F3A78E /* JIPHYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35BD6ED1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYUITests" */;
+			buildPhases = (
+				B35BD6DA1F5FA79D00F3A78E /* Sources */,
+				B35BD6DB1F5FA79D00F3A78E /* Frameworks */,
+				B35BD6DC1F5FA79D00F3A78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35BD6E01F5FA79D00F3A78E /* PBXTargetDependency */,
+			);
+			name = JIPHYUITests;
+			productName = JIPHYUITests;
+			productReference = B35BD6DE1F5FA79D00F3A78E /* JIPHYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B35BD6B71F5FA79D00F3A78E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Damian A Torres";
+				TargetAttributes = {
+					B35BD6BE1F5FA79D00F3A78E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					B35BD6D21F5FA79D00F3A78E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B35BD6BE1F5FA79D00F3A78E;
+					};
+					B35BD6DD1F5FA79D00F3A78E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B35BD6BE1F5FA79D00F3A78E;
+					};
+				};
+			};
+			buildConfigurationList = B35BD6BA1F5FA79D00F3A78E /* Build configuration list for PBXProject "JIPHY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B35BD6B61F5FA79D00F3A78E;
+			productRefGroup = B35BD6C01F5FA79D00F3A78E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B35BD6BE1F5FA79D00F3A78E /* JIPHY */,
+				B35BD6D21F5FA79D00F3A78E /* JIPHYTests */,
+				B35BD6DD1F5FA79D00F3A78E /* JIPHYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B35BD6BD1F5FA79D00F3A78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35BD6CD1F5FA79D00F3A78E /* LaunchScreen.storyboard in Resources */,
+				B35BD6CA1F5FA79D00F3A78E /* Assets.xcassets in Resources */,
+				B35BD6C81F5FA79D00F3A78E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6D11F5FA79D00F3A78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6DC1F5FA79D00F3A78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E089B09CAC707A37BBCDF97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765D0F48AE248874DC425C81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C02E1981AF7F2EAD501754BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B35BD6BB1F5FA79D00F3A78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */,
+				B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6CF1F5FA79D00F3A78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35BD6D81F5FA79D00F3A78E /* JIPHYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35BD6DA1F5FA79D00F3A78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35BD6E31F5FA79D00F3A78E /* JIPHYUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B35BD6D51F5FA79D00F3A78E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35BD6BE1F5FA79D00F3A78E /* JIPHY */;
+			targetProxy = B35BD6D41F5FA79D00F3A78E /* PBXContainerItemProxy */;
+		};
+		B35BD6E01F5FA79D00F3A78E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35BD6BE1F5FA79D00F3A78E /* JIPHY */;
+			targetProxy = B35BD6DF1F5FA79D00F3A78E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B35BD6C61F5FA79D00F3A78E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35BD6C71F5FA79D00F3A78E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B35BD6CB1F5FA79D00F3A78E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35BD6CC1F5FA79D00F3A78E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B35BD6E51F5FA79D00F3A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B35BD6E61F5FA79D00F3A78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B35BD6E81F5FA79D00F3A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64920599ABAE1285DEBEF590 /* Pods-JIPHY.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JIPHY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B35BD6E91F5FA79D00F3A78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7443F579876AE5F6115D8F /* Pods-JIPHY.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JIPHY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B35BD6EB1F5FA79D00F3A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JIPHYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JIPHY.app/JIPHY";
+			};
+			name = Debug;
+		};
+		B35BD6EC1F5FA79D00F3A78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JIPHYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JIPHY.app/JIPHY";
+			};
+			name = Release;
+		};
+		B35BD6EE1F5FA79D00F3A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JIPHYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JIPHY;
+			};
+			name = Debug;
+		};
+		B35BD6EF1F5FA79D00F3A78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JIPHYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wework.JIPHYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JIPHY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B35BD6BA1F5FA79D00F3A78E /* Build configuration list for PBXProject "JIPHY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35BD6E51F5FA79D00F3A78E /* Debug */,
+				B35BD6E61F5FA79D00F3A78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35BD6E71F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35BD6E81F5FA79D00F3A78E /* Debug */,
+				B35BD6E91F5FA79D00F3A78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B35BD6EA1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35BD6EB1F5FA79D00F3A78E /* Debug */,
+				B35BD6EC1F5FA79D00F3A78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B35BD6ED1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35BD6EE1F5FA79D00F3A78E /* Debug */,
+				B35BD6EF1F5FA79D00F3A78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B35BD6B71F5FA79D00F3A78E /* Project object */;
+}
