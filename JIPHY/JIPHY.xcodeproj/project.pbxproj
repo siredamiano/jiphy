@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31E9F4D1F61006C00A84AE3 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F4C1F61006C00A84AE3 /* GIF.swift */; };
+		B31E9F4F1F61025900A84AE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F4E1F61025900A84AE3 /* User.swift */; };
+		B31E9F511F61038600A84AE3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F501F61038600A84AE3 /* Image.swift */; };
+		B31E9F531F61064100A84AE3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F521F61064100A84AE3 /* Pagination.swift */; };
+		B31E9F551F61068700A84AE3 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F541F61068700A84AE3 /* Meta.swift */; };
 		B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */; };
 		B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C41F5FA79D00F3A78E /* ViewController.swift */; };
 		B35BD6C81F5FA79D00F3A78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6C61F5FA79D00F3A78E /* Main.storyboard */; };
@@ -37,6 +42,11 @@
 /* Begin PBXFileReference section */
 		5C7443F579876AE5F6115D8F /* Pods-JIPHY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIPHY.release.xcconfig"; path = "Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY.release.xcconfig"; sourceTree = "<group>"; };
 		64920599ABAE1285DEBEF590 /* Pods-JIPHY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIPHY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY.debug.xcconfig"; sourceTree = "<group>"; };
+		B31E9F4C1F61006C00A84AE3 /* GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		B31E9F4E1F61025900A84AE3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B31E9F501F61038600A84AE3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B31E9F521F61064100A84AE3 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		B31E9F541F61068700A84AE3 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		B35BD6BF1F5FA79D00F3A78E /* JIPHY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JIPHY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35BD6C41F5FA79D00F3A78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +106,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B31E9F4B1F61005B00A84AE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B31E9F4C1F61006C00A84AE3 /* GIF.swift */,
+				B31E9F4E1F61025900A84AE3 /* User.swift */,
+				B31E9F501F61038600A84AE3 /* Image.swift */,
+				B31E9F521F61064100A84AE3 /* Pagination.swift */,
+				B31E9F541F61068700A84AE3 /* Meta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B35BD6B61F5FA79D00F3A78E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +143,7 @@
 		B35BD6C11F5FA79D00F3A78E /* JIPHY */ = {
 			isa = PBXGroup;
 			children = (
+				B31E9F4B1F61005B00A84AE3 /* Models */,
 				B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */,
 				B35BD6C41F5FA79D00F3A78E /* ViewController.swift */,
 				B35BD6C61F5FA79D00F3A78E /* Main.storyboard */,
@@ -334,8 +357,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31E9F4F1F61025900A84AE3 /* User.swift in Sources */,
+				B31E9F4D1F61006C00A84AE3 /* GIF.swift in Sources */,
 				B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */,
+				B31E9F531F61064100A84AE3 /* Pagination.swift in Sources */,
 				B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */,
+				B31E9F551F61068700A84AE3 /* Meta.swift in Sources */,
+				B31E9F511F61038600A84AE3 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +610,7 @@
 				B35BD6E91F5FA79D00F3A78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35BD6EA1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +619,7 @@
 				B35BD6EC1F5FA79D00F3A78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35BD6ED1F5FA79D00F3A78E /* Build configuration list for PBXNativeTarget "JIPHYUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +628,7 @@
 				B35BD6EF1F5FA79D00F3A78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
