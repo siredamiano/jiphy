@@ -27,7 +27,7 @@ struct GIF {
     let createDateTime: Date
     let importDateTime: Date
     let trendingDateTime: Date
-    let images: [Image]
+    let images: [Images]
     let pagination: Pagination?
     let meta: Meta?
 
@@ -94,7 +94,7 @@ extension GIF {
         createDateTime = dateFormatter.date(from: serialization.value(forKey: Keys.createDateTime)!)!
         importDateTime = dateFormatter.date(from: serialization.value(forKey: Keys.importDateTime)!)!
         trendingDateTime = dateFormatter.date(from: serialization.value(forKey: Keys.trendingDateTime)!)!
-        // array of images here
+         
         if let paginationSerialization: Serialization = serialization.value(forKey: Keys.pagination) {
             pagination = Pagination(serialization: paginationSerialization)
         } else {
