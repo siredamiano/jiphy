@@ -12,5 +12,19 @@ struct Meta {
     let msg: String
     let status: Int
     let responseID: String
+}
+
+extension Meta {
     
+    private enum Keys: String, SerializationKey {
+        case msg
+        case status
+        case responseID = "response_id"
+    }
+    
+    init(serialization: Serialization) {
+        msg = serialization.value(forKey: Keys.msg)!
+        status = serialization.value(forKey: Keys.status)!
+        responseID = serialization.value(forKey: Keys.responseID)!
+    }
 }

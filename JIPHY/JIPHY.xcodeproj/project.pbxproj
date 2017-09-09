@@ -12,6 +12,7 @@
 		B31E9F511F61038600A84AE3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F501F61038600A84AE3 /* Image.swift */; };
 		B31E9F531F61064100A84AE3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F521F61064100A84AE3 /* Pagination.swift */; };
 		B31E9F551F61068700A84AE3 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F541F61068700A84AE3 /* Meta.swift */; };
+		B31E9F5A1F638A5400A84AE3 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E9F591F638A5400A84AE3 /* Serialization.swift */; };
 		B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */; };
 		B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6C41F5FA79D00F3A78E /* ViewController.swift */; };
 		B35BD6C81F5FA79D00F3A78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6C61F5FA79D00F3A78E /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		B31E9F501F61038600A84AE3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B31E9F521F61064100A84AE3 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		B31E9F541F61068700A84AE3 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		B31E9F591F638A5400A84AE3 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		B35BD6BF1F5FA79D00F3A78E /* JIPHY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JIPHY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35BD6C41F5FA79D00F3A78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B31E9F561F624D4800A84AE3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B31E9F581F638A4900A84AE3 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				B31E9F591F638A5400A84AE3 /* Serialization.swift */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
 		B35BD6B61F5FA79D00F3A78E = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +160,8 @@
 		B35BD6C11F5FA79D00F3A78E /* JIPHY */ = {
 			isa = PBXGroup;
 			children = (
+				B31E9F581F638A4900A84AE3 /* Serialization */,
+				B31E9F561F624D4800A84AE3 /* Networking */,
 				B31E9F4B1F61005B00A84AE3 /* Models */,
 				B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */,
 				B35BD6C41F5FA79D00F3A78E /* ViewController.swift */,
@@ -311,9 +330,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JIPHY/Pods-JIPHY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,13 +369,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JIPHY-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -361,6 +392,7 @@
 				B31E9F4D1F61006C00A84AE3 /* GIF.swift in Sources */,
 				B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */,
 				B31E9F531F61064100A84AE3 /* Pagination.swift in Sources */,
+				B31E9F5A1F638A5400A84AE3 /* Serialization.swift in Sources */,
 				B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */,
 				B31E9F551F61068700A84AE3 /* Meta.swift in Sources */,
 				B31E9F511F61038600A84AE3 /* Image.swift in Sources */,
