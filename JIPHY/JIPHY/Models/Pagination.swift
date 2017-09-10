@@ -11,7 +11,7 @@ import Foundation
 struct Pagination {
     
     let offset: Int
-    let totalCount: Int
+    let totalCount: Int?
     let count: Int
     
 }
@@ -25,7 +25,7 @@ extension Pagination {
     
     init(serialization: Serialization) {
         offset = serialization.value(forKey: Keys.offset)!
-        totalCount = serialization.value(forKey: Keys.totalCount)!
+        totalCount = serialization.value(forKey: Keys.totalCount)
         count = serialization.value(forKey: Keys.count)!
     }
 

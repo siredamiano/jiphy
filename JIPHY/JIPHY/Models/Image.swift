@@ -9,12 +9,12 @@
 import Foundation
 
 struct Images {
-    let fixedHeight: FixedHeight
-    let fixedHeightStill: FixedHeightStill
-    let fixedHeightDownsampled: FixedHeightDownsampled
-    let fixedWidth: FixedWidth
-    let fixedWidthStill: FixedWidthStill
-    let fixedWidthDownsampled: FixedWidthDownsampled
+    var fixedHeight: FixedHeight? = nil
+    var fixedHeightStill: FixedHeightStill? = nil
+    var fixedHeightDownsampled: FixedHeightDownsampled? = nil
+    var fixedWidth: FixedWidth? = nil
+    var fixedWidthStill: FixedWidthStill? = nil
+    var fixedWidthDownsampled: FixedWidthDownsampled? = nil
 }
 
 extension Images {
@@ -29,6 +29,7 @@ extension Images {
     }
     
     init(serialization: Serialization) {
+        
         if let fixedHeightSerialization: Serialization = serialization.value(forKey: Keys.FixedHeight) {
             fixedHeight = FixedHeight(serialization: fixedHeightSerialization)
         }
@@ -54,13 +55,13 @@ extension Images {
 class ImageProperties {
 
     var url: URL
-    var width: Int = 0
-    var height: Int = 0
-    var size: Int? = nil
-    var mp4: String? = nil
-    var mp4Size: Int? = nil
-    var webp: String? = nil
-    var webpSize: Int? = nil
+    var width: Int
+    var height: Int
+    var size: Int?
+    var mp4: String?
+    var mp4Size: Int?
+    var webp: String?
+    var webpSize: Int?
     
     init(url: URL, width: Int, height: Int, size: Int, mp4: String, mp4Size: Int, webp: String, webpSize: Int) {
         self.url = url
@@ -88,14 +89,27 @@ extension ImageProperties {
     }
     
     convenience init(serialization: Serialization) {
+        self.init(url: URL(string: "bruh")!, width: 0, height: 0, size: 0, mp4: "", mp4Size: 0, webp: "", webpSize: 0)
         self.url = URL(string: serialization.value(forKey: Keys.url)!)!
-        self.width = serialization.value(forKey: Keys.width)!
-        self.height = serialization.value(forKey: Keys.height)!
-        self.size = serialization.value(forKey: Keys.size)!
-        self.mp4 = serialization.value(forKey: Keys.mp4)!
-        self.mp4Size = serialization.value(forKey: Keys.mp4Size)!
-        self.webp = serialization.value(forKey: Keys.webp)!
-        self.webpSize = serialization.value(forKey: Keys.webpSize)!
+        self.width = Int(serialization.value(forKey: Keys.width)!)!
+        self.height = Int(serialization.value(forKey: Keys.height)!)!
+        if let sizeString: String = serialization.value(forKey: Keys.size) {
+            self.size = Int(sizeString)
+        } else {
+            self.size = 0
+        }
+        self.mp4 = serialization.value(forKey: Keys.mp4)
+        if let mp4SizeString: String = serialization.value(forKey: Keys.mp4Size) {
+            self.mp4Size = Int(mp4SizeString)
+        } else {
+            self.mp4Size = 0
+        }
+        self.webp = serialization.value(forKey: Keys.webp)
+        if let webpSizeString: String = serialization.value(forKey: Keys.webpSize) {
+            self.webpSize = Int(webpSizeString)
+        } else {
+            self.webpSize = 0
+        }
     }
 }
 

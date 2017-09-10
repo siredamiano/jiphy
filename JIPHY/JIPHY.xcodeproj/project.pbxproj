@@ -20,6 +20,8 @@
 		B35BD6CD1F5FA79D00F3A78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35BD6CB1F5FA79D00F3A78E /* LaunchScreen.storyboard */; };
 		B35BD6D81F5FA79D00F3A78E /* JIPHYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6D71F5FA79D00F3A78E /* JIPHYTests.swift */; };
 		B35BD6E31F5FA79D00F3A78E /* JIPHYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BD6E21F5FA79D00F3A78E /* JIPHYUITests.swift */; };
+		B3CDE3EB1F648ECD009DA0B5 /* APIResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3EA1F648ECD009DA0B5 /* APIResources.swift */; };
+		B3CDE3ED1F64961A009DA0B5 /* GIPHYNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3EC1F64961A009DA0B5 /* GIPHYNetworkRequest.swift */; };
 		C3A03F9FA70E9D6CBC28752C /* Pods_JIPHY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		B35BD6DE1F5FA79D00F3A78E /* JIPHYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JIPHYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35BD6E21F5FA79D00F3A78E /* JIPHYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIPHYUITests.swift; sourceTree = "<group>"; };
 		B35BD6E41F5FA79D00F3A78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CDE3EA1F648ECD009DA0B5 /* APIResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResources.swift; sourceTree = "<group>"; };
+		B3CDE3EC1F64961A009DA0B5 /* GIPHYNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIPHYNetworkRequest.swift; sourceTree = "<group>"; };
 		CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JIPHY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,7 @@
 		B31E9F561F624D4800A84AE3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B3CDE3EC1F64961A009DA0B5 /* GIPHYNetworkRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		B35BD6C11F5FA79D00F3A78E /* JIPHY */ = {
 			isa = PBXGroup;
 			children = (
+				B3CDE3E91F648EBE009DA0B5 /* JIPHYAPIResources */,
 				B31E9F581F638A4900A84AE3 /* Serialization */,
 				B31E9F561F624D4800A84AE3 /* Networking */,
 				B31E9F4B1F61005B00A84AE3 /* Models */,
@@ -189,6 +195,14 @@
 				B35BD6E41F5FA79D00F3A78E /* Info.plist */,
 			);
 			path = JIPHYUITests;
+			sourceTree = "<group>";
+		};
+		B3CDE3E91F648EBE009DA0B5 /* JIPHYAPIResources */ = {
+			isa = PBXGroup;
+			children = (
+				B3CDE3EA1F648ECD009DA0B5 /* APIResources.swift */,
+			);
+			path = JIPHYAPIResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,12 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CDE3ED1F64961A009DA0B5 /* GIPHYNetworkRequest.swift in Sources */,
 				B31E9F4F1F61025900A84AE3 /* User.swift in Sources */,
 				B31E9F4D1F61006C00A84AE3 /* GIF.swift in Sources */,
 				B35BD6C51F5FA79D00F3A78E /* ViewController.swift in Sources */,
 				B31E9F531F61064100A84AE3 /* Pagination.swift in Sources */,
 				B31E9F5A1F638A5400A84AE3 /* Serialization.swift in Sources */,
 				B35BD6C31F5FA79D00F3A78E /* AppDelegate.swift in Sources */,
+				B3CDE3EB1F648ECD009DA0B5 /* APIResources.swift in Sources */,
 				B31E9F551F61068700A84AE3 /* Meta.swift in Sources */,
 				B31E9F511F61038600A84AE3 /* Image.swift in Sources */,
 			);
