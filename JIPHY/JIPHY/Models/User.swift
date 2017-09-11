@@ -15,7 +15,7 @@ struct User {
     let profileURL: URL?
     let username: String
     let displayName: String
-    let twitter: String
+    let twitter: String?
 }
 
 extension User {
@@ -47,7 +47,7 @@ extension User {
         }
         username = serialization.value(forKey: Keys.username)!
         displayName = serialization.value(forKey: Keys.displayName)!
-        twitter = serialization.value(forKey: Keys.twitter)!
+        twitter = serialization.value(forKey: Keys.twitter)
     }
 
 }

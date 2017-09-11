@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="214" y="-987"/>
         </scene>
-        <!--View Controller-->
+        <!--JIPHY-->
         <scene sceneID="1Bs-NW-6z6">
             <objects>
-                <viewController id="Kdp-dw-J0L" customClass="ViewController" customModule="JIPHY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JIPHYSingleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kdp-dw-J0L" customClass="JIPHYSingleViewController" customModule="JIPHY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7Q-9Z-xMF"/>
                         <viewControllerLayoutGuide type="bottom" id="vcv-se-5Pi"/>
@@ -43,21 +43,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-KD-tIc" customClass="GIFImageView" customModule="Gifu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="288"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-KD-tIc" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="0.0" y="72" width="375" height="244"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.89239904920000002" blue="0.8160761876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="leading" secondItem="9yI-w7-yRw" secondAttribute="leading" id="Upy-JE-w54"/>
+                            <constraint firstItem="vcv-se-5Pi" firstAttribute="top" secondItem="TFz-KD-tIc" secondAttribute="bottom" constant="351" id="kec-xz-YAB"/>
+                            <constraint firstAttribute="trailing" secondItem="TFz-KD-tIc" secondAttribute="trailing" id="spq-wY-Qrf"/>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="top" secondItem="L7Q-9Z-xMF" secondAttribute="bottom" constant="8" id="vLs-g4-OaB"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7Dc-3f-OMw"/>
+                    <navigationItem key="navigationItem" title="JIPHY" id="7Dc-3f-OMw">
+                        <barButtonItem key="backBarButtonItem" title="Close" id="DEw-36-czH"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="gifImageView" destination="TFz-KD-tIc" id="H9g-qj-3jE"/>
+                        <outlet property="gifImageView" destination="TFz-KD-tIc" id="eJT-x3-H8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KN8-AE-gV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="-987"/>
+            <point key="canvasLocation" x="1994" y="-987"/>
         </scene>
         <!--JIPHY-->
         <scene sceneID="EOe-gK-OXZ">

@@ -8,6 +8,8 @@
 
 import Foundation
 
+fileprivate let APIKEY = "264115c00a1944a4a8cf1510f1a295e6"
+
 struct APIWrapper {
     let data: [Serialization]
     let pagination: Pagination?
@@ -47,8 +49,7 @@ extension APIResource {
 
     var url: URL {
         let baseURL = "https://api.giphy.com/v1/gifs"
-        let apiKey = "264115c00a1944a4a8cf1510f1a295e6"
-        let apiKeyParam = "api_key=\(apiKey)"
+        let apiKeyParam = "api_key=\(APIKEY)"
         let url = "\(baseURL)\(methodPath)?\(apiKeyParam)&\(parameters)"
         return URL(string:url)!
     }

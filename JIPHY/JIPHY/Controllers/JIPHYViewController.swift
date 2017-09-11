@@ -86,7 +86,9 @@ extension JIPHYViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let jiphySingleViewController: JIPHYSingleViewController = storyboard?.instantiateViewController(withIdentifier: "JIPHYSingleViewController") as! JIPHYSingleViewController
+        jiphySingleViewController.gif = gifForIndexPath(indexPath: indexPath)
+        self.navigationController?.pushViewController(jiphySingleViewController, animated: true)
     }
     
 }
