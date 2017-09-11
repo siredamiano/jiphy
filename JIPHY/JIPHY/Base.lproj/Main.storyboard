@@ -44,15 +44,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-KD-tIc" customClass="FLAnimatedImageView">
-                                <rect key="frame" x="0.0" y="72" width="375" height="244"/>
+                                <rect key="frame" x="0.0" y="189" width="375" height="288"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89239904920000002" blue="0.8160761876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TFz-KD-tIc" firstAttribute="leading" secondItem="9yI-w7-yRw" secondAttribute="leading" id="Upy-JE-w54"/>
-                            <constraint firstItem="vcv-se-5Pi" firstAttribute="top" secondItem="TFz-KD-tIc" secondAttribute="bottom" constant="351" id="kec-xz-YAB"/>
-                            <constraint firstAttribute="trailing" secondItem="TFz-KD-tIc" secondAttribute="trailing" id="spq-wY-Qrf"/>
-                            <constraint firstItem="TFz-KD-tIc" firstAttribute="top" secondItem="L7Q-9Z-xMF" secondAttribute="bottom" constant="8" id="vLs-g4-OaB"/>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="top" secondItem="L7Q-9Z-xMF" secondAttribute="bottom" constant="169" id="4la-Ap-vPo"/>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="centerY" secondItem="9yI-w7-yRw" secondAttribute="centerY" id="Htk-2m-NKK"/>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="leading" secondItem="9yI-w7-yRw" secondAttribute="leading" id="JEZ-wM-hQF"/>
+                            <constraint firstItem="TFz-KD-tIc" firstAttribute="centerX" secondItem="9yI-w7-yRw" secondAttribute="centerX" id="JMJ-m8-bcB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JIPHY" id="7Dc-3f-OMw">
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KN8-AE-gV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="-987"/>
+            <point key="canvasLocation" x="1992.8" y="-987.25637181409309"/>
         </scene>
         <!--JIPHY-->
         <scene sceneID="EOe-gK-OXZ">
