@@ -22,7 +22,6 @@
 		B3B7A1671F660F6600F38FAC /* JIPHYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7A1661F660F6600F38FAC /* JIPHYCollectionViewCell.swift */; };
 		B3CDE3EB1F648ECD009DA0B5 /* APIResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3EA1F648ECD009DA0B5 /* APIResources.swift */; };
 		B3CDE3ED1F64961A009DA0B5 /* GIPHYNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3EC1F64961A009DA0B5 /* GIPHYNetworkRequest.swift */; };
-		B3CDE3EF1F64F1BD009DA0B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3EE1F64F1BD009DA0B5 /* ViewController.swift */; };
 		B3CDE3F41F65F946009DA0B5 /* JIPHYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CDE3F31F65F946009DA0B5 /* JIPHYViewController.swift */; };
 		C3A03F9FA70E9D6CBC28752C /* Pods_JIPHY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		B3B7A1661F660F6600F38FAC /* JIPHYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIPHYCollectionViewCell.swift; sourceTree = "<group>"; };
 		B3CDE3EA1F648ECD009DA0B5 /* APIResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResources.swift; sourceTree = "<group>"; };
 		B3CDE3EC1F64961A009DA0B5 /* GIPHYNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIPHYNetworkRequest.swift; sourceTree = "<group>"; };
-		B3CDE3EE1F64F1BD009DA0B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3CDE3F31F65F946009DA0B5 /* JIPHYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIPHYViewController.swift; sourceTree = "<group>"; };
 		CB5E03FCEFE4A221D700A223 /* Pods_JIPHY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JIPHY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,7 +173,6 @@
 				B31E9F581F638A4900A84AE3 /* Serialization */,
 				B31E9F561F624D4800A84AE3 /* Networking */,
 				B31E9F4B1F61005B00A84AE3 /* Models */,
-				B3CDE3EE1F64F1BD009DA0B5 /* ViewController.swift */,
 				B35BD6C21F5FA79D00F3A78E /* AppDelegate.swift */,
 				B35BD6C61F5FA79D00F3A78E /* Main.storyboard */,
 				B35BD6C91F5FA79D00F3A78E /* Assets.xcassets */,
@@ -434,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3CDE3EF1F64F1BD009DA0B5 /* ViewController.swift in Sources */,
 				B3CDE3ED1F64961A009DA0B5 /* GIPHYNetworkRequest.swift in Sources */,
 				B31E9F4F1F61025900A84AE3 /* User.swift in Sources */,
 				B31E9F4D1F61006C00A84AE3 /* GIF.swift in Sources */,

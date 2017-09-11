@@ -19,6 +19,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nDm-0G-X9A">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="caM-DM-lD7" kind="relationship" relationship="rootViewController" id="E0P-96-Apq"/>
                     </connections>
@@ -67,8 +71,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-6z-Irn">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-6z-Irn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="0.89239904922654034" blue="0.81607618759496281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3pH-2D-RO1">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -83,12 +89,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-Fb-yMf" customClass="FLAnimatedImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-Fb-yMf" customClass="FLAnimatedImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="5fL-Fb-yMf" firstAttribute="leading" secondItem="b9P-EZ-7q6" secondAttribute="leading" id="6Ie-a8-l7X"/>
+                                            <constraint firstAttribute="trailing" secondItem="5fL-Fb-yMf" secondAttribute="trailing" id="afD-yb-OzE"/>
+                                            <constraint firstAttribute="bottom" secondItem="5fL-Fb-yMf" secondAttribute="bottom" id="e1z-4U-DZX"/>
+                                            <constraint firstItem="5fL-Fb-yMf" firstAttribute="top" secondItem="b9P-EZ-7q6" secondAttribute="top" id="mDn-sd-yeK"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="gifImageView" destination="5fL-Fb-yMf" id="pJK-jF-TY5"/>
                                         </connections>
@@ -99,9 +110,9 @@
                                     <outlet property="delegate" destination="caM-DM-lD7" id="0MK-GK-Abr"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uev-vC-tBD">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search GIF" translatesAutoresizingMaskIntoConstraints="NO" id="uev-vC-tBD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="caM-DM-lD7" id="x2r-dL-QlH"/>
                                 </connections>

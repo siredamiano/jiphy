@@ -48,11 +48,20 @@ private extension JIPHYViewController {
         }
     }
     
+    func listGIFSFromSearch(query q:String) {
+        let searchResource = SearchResource(query: q)
+        let searchRequest = APIRequest(resource:searchResource)
+        request = searchRequest
+        searchRequest.load { [weak self] (gifs: [GIF]?) in
+            self?.gifsList = gifs!
+        }
+    }
+    
+    
+    
     func gifForIndexPath(indexPath: IndexPath) -> GIF {
         return gifsList[indexPath.row]
     }
-    
-
     
 }
 
@@ -112,8 +121,22 @@ extension JIPHYViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension JIPHYViewController: UITextFieldDelegate {
+extension JIPHYViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        searchBar.addSubview(activityIndicator)
+        activityIndicator.frame = searchBar.bounds
+        activityIndicator.startAnimating()
 
+        listGIFSFromSearch(query: searchBar.text!)
+
+        activityIndicator.removeFromSuperview()
+        searchBar.text = nil
+        searchBar.resignFirstResponder()
+        
+    }
 }
 
 
