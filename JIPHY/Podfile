@@ -6,5 +6,6 @@ target 'JIPHY' do
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
     pod 'SnapKit', '~> 3.2.0'
-    pod 'SwiftyGif'
+    pod 'SDWebImage'
+    pod 'SDWebImage/GIF'
 end

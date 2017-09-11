@@ -15,6 +15,10 @@ struct Images {
     var fixedWidth: FixedWidth? = nil
     var fixedWidthStill: FixedWidthStill? = nil
     var fixedWidthDownsampled: FixedWidthDownsampled? = nil
+    var fixedWidthSmall: FixedWidthSmall? = nil
+    var fixedWidthSmallStill: FixedWidthSmallStill? = nil
+    var fixedHeightSmall: FixedHeightSmall? = nil
+    var fixedHeightSmallStill: FixedHeightSmallStill? = nil
 }
 
 extension Images {
@@ -26,6 +30,10 @@ extension Images {
         case FixedWidth = "fixed_width"
         case FixedWidthStill = "fixed_width_still"
         case FixedWidthDownsampled = "fixed_width_downsampled"
+        case FixedHeightSmall = "fixed_height_small"
+        case FixedHeightSmallStill = "fixed_height_small_still"
+        case FixedWidthSmall = "fixed_width_small"
+        case FixedWidthSmallStill = "fixed_width_small_still"
     }
     
     init(serialization: Serialization) {
@@ -48,6 +56,19 @@ extension Images {
         if let fixedWidthDownsampledSerialization: Serialization = serialization.value(forKey: Keys.FixedWidthDownsampled) {
             fixedWidthDownsampled = FixedWidthDownsampled(serialization: fixedWidthDownsampledSerialization)
         }
+        if let fixedWidthSmallSerialization: Serialization = serialization.value(forKey: Keys.FixedWidthSmall) {
+            fixedWidthSmall = FixedWidthSmall(serialization: fixedWidthSmallSerialization)
+        }
+        if let fixedWidthSmallStillSerialization: Serialization = serialization.value(forKey: Keys.FixedWidthSmallStill) {
+            fixedWidthSmallStill = FixedWidthSmallStill(serialization: fixedWidthSmallStillSerialization)
+        }
+        if let fixedHeightSmallSerialization: Serialization = serialization.value(forKey: Keys.FixedHeightSmall) {
+            fixedHeightSmall = FixedHeightSmall(serialization: fixedHeightSmallSerialization)
+        }
+        if let fixedHeightSmallStillSerialization: Serialization = serialization.value(forKey: Keys.FixedHeightSmallStill) {
+            fixedHeightSmallStill = FixedHeightSmallStill(serialization: fixedHeightSmallStillSerialization)
+        }
+        
     }
     
 }
@@ -138,6 +159,22 @@ class FixedWidthStill: ImageProperties {
 class FixedWidthDownsampled: ImageProperties {
     convenience init(url: URL, width: Int, height: Int, size: Int, webp: String, webpSize: Int) {
         self.init(url: url, width: width, height: height, size: size, mp4: "", mp4Size: 0, webp: webp, webpSize: webpSize)
+    }
+}
+
+class FixedWidthSmall: ImageProperties { }
+
+class FixedWidthSmallStill: ImageProperties {
+    convenience init(url: URL, width: Int, height: Int) {
+        self.init(url: url, width: width, height: height, size: 0, mp4: "", mp4Size: 0, webp: "", webpSize: 0)
+    }
+}
+
+class FixedHeightSmall: ImageProperties { }
+
+class FixedHeightSmallStill: ImageProperties {
+    convenience init(url: URL, width: Int, height: Int) {
+        self.init(url: url, width: width, height: height, size: 0, mp4: "", mp4Size: 0, webp: "", webpSize: 0)
     }
 }
 

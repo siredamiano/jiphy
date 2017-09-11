@@ -1,26 +1,132 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oU8-C0-vOY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="NOe-eQ-heM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oU8-C0-vOY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ld9-a1-KO6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="caM-DM-lD7" kind="relationship" relationship="rootViewController" id="E0P-96-Apq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kza-g3-COu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-987"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Bs-NW-6z6">
+            <objects>
+                <viewController id="Kdp-dw-J0L" customClass="ViewController" customModule="JIPHY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="L7Q-9Z-xMF"/>
+                        <viewControllerLayoutGuide type="bottom" id="vcv-se-5Pi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="9yI-w7-yRw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-KD-tIc" customClass="GIFImageView" customModule="Gifu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7Dc-3f-OMw"/>
+                    <connections>
+                        <outlet property="gifImageView" destination="TFz-KD-tIc" id="H9g-qj-3jE"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KN8-AE-gV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1946" y="-987"/>
+        </scene>
+        <!--JIPHY-->
+        <scene sceneID="EOe-gK-OXZ">
+            <objects>
+                <viewController id="caM-DM-lD7" customClass="JIPHYViewController" customModule="JIPHY" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Vj-rR-PbN"/>
+                        <viewControllerLayoutGuide type="bottom" id="2NY-d5-dD6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9P-ha-e00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-6z-Irn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3pH-2D-RO1">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GIFCell" id="b9P-EZ-7q6" customClass="JIPHYCollectionViewCell" customModule="JIPHY" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-Fb-yMf" customClass="FLAnimatedImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="gifImageView" destination="5fL-Fb-yMf" id="pJK-jF-TY5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="caM-DM-lD7" id="MID-3A-xIg"/>
+                                    <outlet property="delegate" destination="caM-DM-lD7" id="0MK-GK-Abr"/>
+                                </connections>
+                            </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uev-vC-tBD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="caM-DM-lD7" id="x2r-dL-QlH"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uev-vC-tBD" firstAttribute="top" secondItem="6Vj-rR-PbN" secondAttribute="bottom" id="ADQ-cT-Fqz"/>
+                            <constraint firstItem="zeK-6z-Irn" firstAttribute="top" secondItem="6Vj-rR-PbN" secondAttribute="bottom" id="AUx-sK-b25"/>
+                            <constraint firstItem="2NY-d5-dD6" firstAttribute="top" secondItem="zeK-6z-Irn" secondAttribute="bottom" id="KCH-GG-mva"/>
+                            <constraint firstItem="uev-vC-tBD" firstAttribute="leading" secondItem="b9P-ha-e00" secondAttribute="leading" id="Qj5-rB-5r3"/>
+                            <constraint firstItem="zeK-6z-Irn" firstAttribute="leading" secondItem="b9P-ha-e00" secondAttribute="leading" id="dih-3P-8Ol"/>
+                            <constraint firstAttribute="trailing" secondItem="uev-vC-tBD" secondAttribute="trailing" id="fmq-ir-Ee6"/>
+                            <constraint firstAttribute="trailing" secondItem="zeK-6z-Irn" secondAttribute="trailing" id="iDs-Vc-uHw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="JIPHY" id="3hs-vz-pjs"/>
+                    <connections>
+                        <outlet property="jiphyCollectionView" destination="zeK-6z-Irn" id="UpF-B0-3br"/>
+                        <outlet property="jiphySearchBar" destination="uev-vC-tBD" id="Vbb-yJ-Dm6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHe-O1-MBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="-987.25637181409309"/>
         </scene>
     </scenes>
 </document>
